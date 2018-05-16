@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+        var door = {
+            color: "white",
+            isOpen: false,
+            open: function() {
+                console.log("isOpen previously was: " + this.isOpen);
+                this.isOpen = true;
+                console.log("isOpen now is: " + this.isOpen);
+                console.log("-------------");
+            },
+            close: function() {
+                console.log("isOpen previously was: " + this.isOpen);
+                this.isOpen = false;
+                console.log("isOpen now is: " + this.isOpen);
+                console.log("-------------");
+            }
+        };
+
+        door.open();
+        door.close();
+        door.close();
+
+    </script>
+    
+  </body>
+</html>
