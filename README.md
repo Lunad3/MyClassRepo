@@ -1,6 +1,8 @@
 -----------------------------------------
 # The Coding Boot Camp at UCI Continuing Education
 
+If this is there you made it!
+
 #### April 2018 Cohort 
 
 
