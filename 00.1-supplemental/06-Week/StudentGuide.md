@@ -6,8 +6,8 @@ In this week, we will be diving back into some more object-oriented programming 
 
 ### Homework Activities
 
-* [Constructor Word Guess](../../../01-Class-Content//11-js-constructors/02-Homework/HomeworkInstructions.md)
-* [Bamazon](../../../01-Class-Content//12-mysql/02-Homework/homework_instructions.md)
+* [Constructor Word Guess](../../11-js-constructors/02-Homework/HomeworkInstructions.md)
+* [Bamazon](../../12-mysql/02-Homework/homework_instructions.md)
 
 ### Helpful Links
 
