@@ -15,6 +15,6 @@ fs.readFile("best_things_ever.txt", "utf8", function(err, data) {
   for (var i = 0; i < output.length; i++) {
 
     // Print each element (item) of the array/
-    console.log(output[i]);
+    console.log(output[i].trim());
   }
 });
