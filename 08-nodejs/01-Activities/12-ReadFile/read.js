@@ -16,6 +16,9 @@ fs.readFile("movies.txt", "utf8", function(error, data) {
 
   // Then split it by commas (to make it more readable)
   var dataArr = data.split(",");
+  for (var i = 0; i < dataArr.length; i++) {
+    dataArr[i] = dataArr[i].trim();
+  }
 
   // We will then re-display the content as an array for later use.
   console.log(dataArr);
