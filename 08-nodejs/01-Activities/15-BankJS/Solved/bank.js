@@ -25,6 +25,9 @@ case "withdraw":
 case "lotto":
   lotto();
   break;
+default: 
+  console.log("Invalid input.");
+  break;
 }
 
 // If the "total" function is called...

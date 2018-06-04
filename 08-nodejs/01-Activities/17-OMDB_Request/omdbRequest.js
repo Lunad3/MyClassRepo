@@ -3,7 +3,7 @@ var request = require("request");
 
 // Then run a request to the OMDB API with the movie specified
 request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy", function(error, response, body) {
-
+  console.log(JSON.stringify(JSON.parse(body), null, 2));
   // If the request is successful (i.e. if the response status code is 200)
   if (!error && response.statusCode === 200) {
 
