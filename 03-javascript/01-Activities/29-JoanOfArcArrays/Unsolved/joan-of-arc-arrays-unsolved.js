@@ -9,3 +9,12 @@ var joanOfArcInfoValues = [
   "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
   "Stands for French unity and nationalism."
 ];
+
+var joanofArcObj =
+  {
+    "Real Name"     : "Jehanne la Pucelle.",
+    "Grew Up Where" : "Domremy, a village in northeast France.",
+    "Known For"     : "Peasnt girl, doughter of a farmer, who rose to become Commander of the French army.",
+    "Scars"         : "Took an arrow to the shouler and a crossbow bolt to the thigh wile trying to liberate Paris.",
+    "Symbolism"     : "Stands for the French unity and nationalism."
+  };

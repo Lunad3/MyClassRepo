@@ -18,25 +18,54 @@ header {
 }
 
 section {
+  padding:20px;
+  margin-bottom: 20px;
+  background: orange;
+
 }
 
 #left {
+  padding: 20px;
+  height:50px;
+  width: 33%;
+  float:left;
+  background: #666;
+
 }
 
 #middle {
+  padding: 20px;
+  height:50px;
+  width: 33%;
+  float: left;
+  background:#888;
 }
 
 #right {
+  padding: 20px;
+  height:50px;
+  width: 33%;
+  float: left;
+  background: #666;
 }
 
 #full {
+  height: 40px;
+  width: 60px;
+  background: purple;
 }
 
 #division {
+  height: 70px;
+  background: violet;
 }
 
 aside {
+  background: teal;
 }
 
 footer {
+  clear:both;
+  width: 100%;
+  background: #ccc;
 }

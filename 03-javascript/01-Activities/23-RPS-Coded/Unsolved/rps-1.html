@@ -9,15 +9,65 @@
 <body>
 
   <div id="game">
+    <h1 id="title">press "r", "p", or "s" to PLAY</h1>
+    <br>
+    <h1 id="humWins">Guest Wins: 0</h1>
+    <br>
+    <h1 id="compWins">Computer Wins: 0</h1>
+    <br>
+    <h1 id="ties">Ties: 0</h1>
 
   </div>
 
   <script type="text/javascript">
     // Whenever a key is pressed, alert "pressed a button".
-    document.onkeyup = function() {
-      alert("pressed a button");
-    };
-  </script>
+    var rps = ["r","p","s"];
+    var tallie = [0,0,0];
+
+    document.onkeyup = function(event) 
+      {
+        var compGuess = rps[Math.floor(Math.random() * 3)];
+        var userGuess = event.key;
+        document.getElementById("title").innerHTML = "You Chose: " + userGuess + " | The Computer Chose: " + compGuess;
+        
+        var userGuessIndex = rps.indexOf(userGuess);//check logic only if valid input
+        if (userGuessIndex != -1)
+          {
+            if (userGuess == compGuess)//tie
+              {
+                tallie[2]++;
+              }
+            else if (userGuess=="r")
+              {
+                if (compGuess=="p")
+                  {tallie[1]++;}//comp wins
+                else if (compGuess=="s")
+                  {tallie[0]++;}//human wins
+              }
+            else if (userGuess=="p")
+              {
+                if (compGuess=="s")
+                  {tallie[1]++;}//comp wins
+                else if (compGuess=="r")
+                  {tallie[0]++;}//human wins
+              }
+            else if (userGuess=="s")
+              {
+                if (compGuess=="r")
+                  {tallie[1]++;}//comp wins
+                else if (compGuess=="p")
+                  {tallie[0]++;}//human wins
+              }
+            console.log(tallie);
+            document.getElementById("humWins").innerHTML = "Guest Wins: " + tallie[0].toString();
+            document.getElementById("compWins").textContent = "Computer Wins: " + tallie[1].toString();
+            document.getElementById("ties").textContent = "Ties: " + tallie[2].toString();
+
+          }
+
+      }
+
+</script>
 
 </body>
 

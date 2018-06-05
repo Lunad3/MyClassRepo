@@ -15,26 +15,54 @@
 
       // Create a Function called "adder" that take three arguments (x, y, z).
       // The function should add the arguments together, and log the result to the console.
+          function adder(x, y , z) 
+            {
+              var result = x+y+z;
+              console.log( x + " + " + y + " + " + z + " = " + result);
+            }
 
 
       // Create a Function called "multiplier" that takes three arguments (x, y, z).
       // The function should multiply the arguments, and log the result to the console.
-
+      function multiplier(x, y , z) 
+            {
+              var result = x*y*z;
+              console.log( x + " * " + y + " * " + z + " = " + result);
+            }
 
       // Create a Function called "isString" that takes three arguments (x, y, z).
       // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
-
+      function isString(x, y , z) 
+            {
+              console.log(x + " is string = " + (typeof x === 'string'));
+              console.log(y + " is string = " + (typeof y === 'string'));
+              console.log(z + " is string = " + (typeof z === 'string'));
+            }
 
       // Create a Function called "vowelChecker" that takes in a single argument (x).
       // "vowlChecker" logs whether or not the input is a vowel.
-
+      function vowelChecker(x) 
+            {
+              var vowels = ["a","e","i","o","u"];
+              console.log( x + " is a vowel = " + (vowels.indexOf(x) != -1));
+            }      
 
       // BONUS
       // Creates a version of "adder" that returns its result. Function is called "adderReturn".
-
+      function adderReturn(x, y , z) 
+            {
+              var result = x+y+z;
+              console.log( x + " + " + y + " + " + z + " = " + result);
+              return result;
+            }
 
       // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
-
+      function multiplierReturn(x, y , z) 
+            {
+              var result = x*y*z;
+              console.log( x + " * " + y + " * " + z + " = " + result);
+              return result;
+            }
 
       // FUNCTION EXECUTION
       // ================================================================================
@@ -43,24 +71,28 @@
 
 
       // Call the adder function here.
-
+      adder(1,2,3);
 
       console.log("-------------------");
 
 
       // Call the multiplier function here.
+      multiplier(1,2,3);
 
 
       console.log("-------------------");
 
 
       // Call the isString function here.
+      isString("a",1,"b");
 
 
       console.log("-------------------");
 
 
       // Call the vowelChecker function here.
+      vowelChecker("a");
+      vowelChecker("b");
 
 
       console.log("-------------------");
@@ -68,13 +100,16 @@
 
       // BONUS
       // Call the adderReturn function here and set it equal to a variable. Then log that variable to the console.
-
+      var a = adderReturn(1,2,3);
+      console.log("a = adderReturn(1,2,3) = " + a);
 
       console.log("-------------------");
 
 
       // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
-
+      var b = multiplierReturn(1,2,3);
+      console.log("b = myltiplierReturn(1,2,3) = " + b);
+      
     </script>
 
   </body>

@@ -1,0 +1,28 @@
+#fixed
+    {
+        width: 40px;
+        height: 20px;
+        position: fixed;
+        top:0;
+        right:0;
+        background-color: blue;
+    }
+
+#relative
+    {
+        position: relative;
+        background-color: green;
+    }
+
+#absolute
+    {
+        position: absolute;
+        background-color: red;
+    }
+#content
+    {
+        margin: 20px 30px;
+        background-color: orange;
+        align-self: center;
+
+    }

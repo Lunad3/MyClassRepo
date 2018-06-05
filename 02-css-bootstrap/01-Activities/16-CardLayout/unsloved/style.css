@@ -1,0 +1,37 @@
+nav
+    {
+        width: 100%;
+    }
+
+.filler
+    {
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+    }
+
+.card
+    {
+        float:right;
+    }
+.content
+    {
+        background-color: blue;
+        align-items: center;
+    }
+img
+    {
+        margin-top: 20px;
+        float:left; 
+    }
+
+p
+    {
+        display: inline;
+    }
+.imgtxt
+    {
+        border-style: solid;
+        border-color: red;
+        border-width: 3px;        
+    }
