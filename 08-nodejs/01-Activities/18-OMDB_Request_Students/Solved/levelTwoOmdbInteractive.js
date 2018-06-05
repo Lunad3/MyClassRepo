@@ -20,7 +20,7 @@ var movieName = "";
 // And do a little for-loop magic to handle the inclusion of "+"s
 for (var i = 2; i < nodeArgs.length; i++) {
 
-  if (i > 2 && i < nodeArgs.length) {
+  if (i > 2) {
 
     movieName = movieName + "+" + nodeArgs[i];
 
