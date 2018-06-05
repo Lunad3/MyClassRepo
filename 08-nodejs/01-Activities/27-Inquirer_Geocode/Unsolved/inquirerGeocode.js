@@ -9,15 +9,60 @@
 
 // Include the geocoder NPM package (Remember to run "npm install geocoder"!)
 var geocoder = require("geocoder");
+var inquirer = require("inquirer");
 
 // Take in the command line arguments
-var nodeArgs = process.argv;
+var nodeArgs = [];
 
+inquirer.prompt([
+  {
+    type:"list",
+    message:"How do you wat to search?",
+    choices:["City and State","Landmark"],
+    name:"searchChoice"
+  },
+  {
+    type:"confirm",
+    message:"Are you Sure?",
+    name:"confirm",
+    default: true
+  }]
+).then(function(response){
+  if (response.confirm){
+    if (response.searchChoice == "City and State"){
+      inquirer.prompt([
+        {
+          type:"input",
+          message:"city:",
+          name: "city"
+        },
+        {
+          type:"input",
+          message:"state:",
+          name: "state"
+        }
+      ]).then(function(response){
+        nodeArgs.push(response.state);
+        nodeArgs.push(response.state);
+      });
+    }
+    else{
+      inquirer.prompt({
+        type:"input",
+        message:"Landmark:",
+        name: "landmark"
+      }).then(function(response){
+        nodeArgs.push(response.landmark);
+      })
+    }
+  }
+
+}).then(function(){
 // Create an empty string for holding the address
 var address = "";
 
 // Capture all the words in the address (again ignoring the first two Node arguments)
-for (var i = 2; i < nodeArgs.length; i++) {
+for (var i = 0; i < nodeArgs.length; i++) {
 
   // Build a string with the address.
   address = address + "" + nodeArgs[i];
@@ -34,3 +79,5 @@ geocoder.geocode(address, function(err, data) {
   console.log(JSON.stringify(data, null, 2));
 });
 
+
+});
