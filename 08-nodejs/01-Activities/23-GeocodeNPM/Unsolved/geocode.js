@@ -10,18 +10,22 @@
 // ========================================================================================================================
 
 // Include the geocoder NPM package (Remember to run "npm install geocoder"!)
-
-
-
-
+// Geocoding
+var geocoder = require('geocoder');
 // Take in the command line arguments
-
-
-
+var inputArr = [];
+if (process.argv.length > 2){
+    for (var i=2; i<process.argv.length; i++){
+        inputArr.push(process.argv[i]);
+    }
+}
+else{
+    console.log("no inputs detected");
+}
 
 // Build your address as an array or string
 
-
-
-
 // Then use Geocoder NPM to geocode the address
+geocoder.geocode(inputArr.toString(), function ( err, data ) {
+    console.log(JSON.stringify(data, null, 2));
+});
