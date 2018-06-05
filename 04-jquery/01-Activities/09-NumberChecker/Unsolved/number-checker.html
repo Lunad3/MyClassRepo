@@ -55,19 +55,22 @@
   </div>
 
   <script type="text/javascript">
+    var compNum = Math.floor(Math.random() * (5 - 1) ) + 1;
     $(document).ready(function() {
-
       // Here we create the on click event that gets the user"s pick
-      $(".container").on("click", ".btn-choice", function() {
-
-        console.log("You clicked a button!!");
-
-        // Add code to have the computer guess a random number between 1 and 4
-        // Then determine which button was clicked
-        // Compare the computer and user guess
-        // Inform the user if the've guessed correctly or incorrectly
-
-      });
+      $(".container").on("click", ".btn-choice", function() 
+        {
+          // Add code to have the computer guess a random number between 1 and 4
+          // Then determine which button was clicked
+          // Compare the computer and user guess
+          // Inform the user if the've guessed correctly or incorrectly
+          
+          if (this.value == compNum.toString())
+            {$("#result").text("YOU GUESSED CORRECTLY!!");}
+          else
+            {$("#result").text("Refresh to try again");}
+          $("#computer-pick").text(compNum.toString());
+        });
     });
   </script>
 

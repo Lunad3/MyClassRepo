@@ -29,6 +29,9 @@
 
   <!-- Here we have div called "random-number" where our random number will go -->
   <h1 class="text-center" id="random-number"></h1>
+  <ol reversed id="history">
+
+  </ol>
 
   <script type="text/javascript">
 
@@ -38,9 +41,20 @@
 
     $("#random-button").on("click",function()
       {
-        $("#random-button").text(Math.floor(Math.random() * (1000) + 1));
+        $("#history").append($("<li>").text(randnum()));
       });
     });
+
+    function randnum ()
+      {
+        var num = "";
+        for (i=0; i<9; i++)
+          {
+            var dig = Math.floor(Math.random() * 9) + 1;
+            num += dig.toString();
+          }
+        return num;
+      }
 
   </script>
   

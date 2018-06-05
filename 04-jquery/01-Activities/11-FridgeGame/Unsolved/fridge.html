@@ -83,6 +83,16 @@
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
       // MAJOR TASK #2: ATTACH ON-CLICK EVENTS TO "LETTER" BUTTONS
+
+        for(i=0;i<letters.length;i++)
+            {
+              var letterbtn = $("<button>");
+              letterbtn.addClass(" letter-button letter letter-button-color");
+              letterbtn.attr("data-letter",letters[i]);
+              letterbtn.text(letters[i]);
+              $("#buttons").append(letterbtn);
+            }
+
       // =================================================================================
 
       // 7. Create an "on-click" event attached to the ".letter-button" class.
@@ -100,6 +110,14 @@
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
       // MAJOR TASK #3: ATTACH ON-CLICK EVENTS TO "CLEAR" BUTTON
+      $(".letter-button").on("click",function()
+        {
+          var fridgeMagnet = $("<div>");
+          fridgeMagnet.addClass(" letter fridge-color");
+          fridgeMagnet.text($(this).attr("data-letter"));
+          $("#display").append(fridgeMagnet);
+        });
+
       // =================================================================================
 
       // 12. Create an "on-click" event attached to the "#clear" button id.
@@ -107,6 +125,7 @@
       // Inside the on-click event...
 
       // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
+      $("#clear").on("click",function(){$("#display").empty();});
 
     });
   </script>
