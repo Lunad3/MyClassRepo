@@ -67,3 +67,27 @@ var unsortedArr = [
   292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185,
   181, 485, 495, 81, 169, 294, 79, 400, 92, 104, 249
 ];
+
+
+function BBLsort ( arr )
+  {
+    for (surface_i = 0; surface_i < arr.length; surface_i++)
+      {
+        for(bubble_i = (arr.length -1); surface_i < bubble_i; bubble_i--)
+          {
+            if(arr[bubble_i] < arr[bubble_i-1])
+              {
+                var bubble_val  = arr[bubble_i];
+                arr[bubble_i]   = arr[bubble_i-1];
+                arr[bubble_i-1] = bubble_val;
+              }
+          }
+      }
+    return arr;
+  } 
+
+document.getElementById("start").innerHTML = unsortedArr.toString();
+
+document.getElementById("go").onclick = function(){document.getElementById("result").innerHTML = BBLsort(unsortedArr).toString();};
+
+

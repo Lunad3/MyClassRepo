@@ -71,10 +71,15 @@
       //  STEP ONE:
 
       //  Declare and initialize a variable named randomNumber to either 0 or 1. Make it random.
+        var randomNumber = Math.floor(Math.random() * (2 - 0) ) + 0;
 
       //  STEP TWO:
 
       //  If randomNumber is equal to zero then:
+        if (randomNumber == 0)
+          {
+            $("#coim-image").html("<img src='http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg'>")
+          }
 
       //  Find the div with an id of coin-image.
       //  Replace its html with an img tag containing this image:

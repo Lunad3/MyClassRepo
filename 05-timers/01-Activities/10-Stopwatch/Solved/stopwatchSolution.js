@@ -30,7 +30,7 @@ var stopwatch = {
     $("#display").text("00:00");
 
     // DONE: Empty the "laps" div.
-    $("#laps").text("");
+    $("#laps").empty();
   },
   start: function() {
 
@@ -43,7 +43,7 @@ var stopwatch = {
   stop: function() {
 
     // DONE: Use clearInterval to stop the count here and set the clock to not be running.
-    clearInterval(intervalId);
+    clearInterval(intervalId);  
     clockRunning = false;
   },
   recordLap: function() {
@@ -75,7 +75,6 @@ var stopwatch = {
 
     var minutes = Math.floor(t / 60);
     var seconds = t - (minutes * 60);
-    //var secons = t % 60;
 
     if (seconds < 10) {
       seconds = "0" + seconds;
