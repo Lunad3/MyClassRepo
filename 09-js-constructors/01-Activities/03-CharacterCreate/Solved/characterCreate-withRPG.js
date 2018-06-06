@@ -28,6 +28,16 @@ function Character(name, profession, gender, age, strength, hitpoints) {
     return false;
   };
 
+  function Warrior(name, profession, gender, age, strength, hitpoints, armor) {
+    Character.call(this, name, profession, gender, age, strength, hitpoints);
+    this.armor = armor;
+  }
+
+  function Rogue(name, profession, gender, age, strength, hitpoints, knives) {
+    Character.call(this, name, profession, gender, age, strength, hitpoints);
+    this.knives = knives;
+  }
+
   // method which takes in a second object and decreases their "hitpoints" by this character's strength
   this.attack = function(character2) {
     character2.hitpoints -= this.strength;
