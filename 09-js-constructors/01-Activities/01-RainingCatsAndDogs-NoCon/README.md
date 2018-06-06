@@ -1,25 +1,11 @@
 # **Instructions**
 
-* Make a dogs object with three keys...
+* Review 01 and 02 from our previous class.  Explain to your partner the differences between the two pieces of code.
 
-  * First key called "raining" with a value of true
+* Also answer the following questions:
 
-* Second key called "noise" with a value of "Woof!"
+  * What do constructors do?
 
-* Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining dogs
+  * Why are they important/how do they help us?
 
-* Make a cats object with three keys...
-
-  * First key called "raining" with a value of false
-
-  * Second key called "noise" with a value of "Meow!"
-
-  * Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining cats
-
-* Make the dog bark
-
-* Make the cat meow
-
-* BONUS: Create a function called "massHysteria" which takes in both the cats and the dogs object and prints "DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!" if both of the `raining` keys are equal to true.
-
-* BONUS: Look to see if you can find any means to simplify your code further and further
+  * Think of an example from the past assignments/projects where you could have used a constructor to help, why does it help in this situation?  (Hint: constructors aren't always necessary.)
