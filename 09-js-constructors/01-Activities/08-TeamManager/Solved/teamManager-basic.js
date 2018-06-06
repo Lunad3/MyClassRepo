@@ -42,7 +42,7 @@ var team = [];
 // recursive function which will allow the user to create 5 players and then will print each player's stats afterwards
 var createPlayer = function() {
   // if the length of the team array is 5 or higher, no more questions will be asked
-  if (starters.length + subs.length < 5) {
+  if (team.length < 5) {
     console.log("\nNEW PLAYER!\n");
     inquirer.prompt([
       {
