@@ -2,6 +2,8 @@
 
 * Review 01 and 02 from our previous class.  Explain to your partner the differences between the two pieces of code.
 
+  * Which would be better if we had to make 1000 cats and dogs?
+
 * Also answer the following questions:
 
   * What do constructors do?
