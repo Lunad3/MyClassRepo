@@ -92,22 +92,17 @@ function playRound() {
         // Subtract the damage amount from the zombie's health.
         zombieHealth -= damage;
         console.log("YOU HIT THE ZOMBIE WITH " + damage + " damage");
-        console.log("You have " + userHealth + " health left. The Zombie has " + zombieHealth + " health left.");
-
-        // Check if the game is over.
-        checkRound();
       }
 
       else {
         // Subtract the damage amount from the user's health.
         userHealth -= damage;
         console.log("OH NO! The zombie slashed you with " + damage + " damage");
-        console.log("You have " + userHealth + " health left. The Zombie has " + zombieHealth + " health left.");
-
-        // Check if the game is over.
-        checkRound();
 
       }
+      console.log("You have " + userHealth + " health left. The Zombie has " + zombieHealth + " health left.");
+      // Check if the game is over.
+      checkRound();
     }
   });
 }
