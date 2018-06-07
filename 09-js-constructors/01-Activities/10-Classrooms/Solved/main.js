@@ -7,4 +7,4 @@ var firstClass = new Classroom("Ahmed", 3187);
 // calling the addStudent method on our firstClass object
 firstClass.addStudent("Jacob", "Coding", 3.87);
 
-console.log(firstClass);
+console.log(JSON.stringify(firstClass, null, 2));
