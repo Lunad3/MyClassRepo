@@ -10,7 +10,11 @@ var connection = mysql.createConnection({
   user: "Luna",
 
   // Your password
+<<<<<<< HEAD
   password: "Papaya321",
+=======
+  password: "ChangeMe123",
+>>>>>>> origin/master
   database: "ice_creamDB"
 });
 
@@ -23,7 +27,7 @@ connection.connect(function(err) {
 function afterConnection() {
   connection.query("SELECT * FROM products", function(err, res) {
     if (err) throw err;
-    console.log(res);
+    console.log(JSON.stringify(res, null, 2));
     connection.end();
   });
 }
