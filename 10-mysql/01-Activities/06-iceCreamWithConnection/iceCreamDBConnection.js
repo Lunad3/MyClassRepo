@@ -7,10 +7,10 @@ var connection = mysql.createConnection({
   port: 3306,
 
   // Your username
-  user: "root",
+  user: "Luna",
 
   // Your password
-  password: "",
+  password: "Papaya321",
   database: "ice_creamDB"
 });
 
