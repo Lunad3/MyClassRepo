@@ -28,3 +28,8 @@ VALUES ("JQuery", 98);
 
 INSERT INTO programming_languages (language, rating)
 VALUES ("MySQL", 70);
+
+
+UPDATE programming_languages 
+SET mastered = false,
+WHERE id = 4;
