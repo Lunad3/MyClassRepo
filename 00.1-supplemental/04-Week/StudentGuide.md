@@ -18,4 +18,4 @@ This week, we are starting to work with data-persistence. We will cover client-s
 
 ### Additional Course Resources
 
-* [Curriculum Resources](https://github.com/coding-boot-camp/curriculum-resources)
+* [Curriculum Resources](../curriculum_resources.md)
