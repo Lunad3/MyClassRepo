@@ -16,4 +16,4 @@ In this week, we will be introducing you to application building with Node and t
 
 ### Additional Course Resources
 
-* [Curriculum Resources](https://github.com/coding-boot-camp/curriculum-resources)
+* [Curriculum Resources](../curriculum_resources.md)

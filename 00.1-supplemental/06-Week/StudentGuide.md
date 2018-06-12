@@ -20,4 +20,4 @@ In this week, we will be diving back into some more object-oriented programming 
 
 ### Additional Course Resources
 
-* [Curriculum Resources](https://github.com/coding-boot-camp/curriculum-resources)
+* [Curriculum Resources](../curriculum_resources.md)
