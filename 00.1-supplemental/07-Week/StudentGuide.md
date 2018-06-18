@@ -2,7 +2,7 @@
 
 ## Overview
 
-This week, students will learn how to set up web servers with Node.js and how express allows web developers to make powerful fullstack web apps quick.
+This week, you will learn how to set up web servers with Node.js and how express allows web developers to make powerful fullstack web apps quick.
 
 ### Homework Activities
 
