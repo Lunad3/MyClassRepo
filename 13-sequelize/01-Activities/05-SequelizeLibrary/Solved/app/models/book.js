@@ -4,10 +4,10 @@
 // Sequelize (capital) references the standard library
 var Sequelize = require("sequelize");
 // sequelize (lowercase) references my connection to the DB.
-var sequelize = require("../config/connection.js");
+var database = require("../config/connection.js");
 
 // Creates a "Book" model that matches up with DB
-var Book = sequelize.define("book", {
+var Book = database.define("book", {
   title: Sequelize.STRING,
   author: Sequelize.STRING,
   genre: Sequelize.STRING,
