@@ -54,7 +54,7 @@ module.exports = function(app) {
     Book.findAll({
       where: {
         pages: {
-          $gte: 150
+          $gt: 150
         }
       },
       order: [["pages", "DESC"]]
